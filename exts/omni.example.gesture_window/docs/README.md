@@ -11,7 +11,7 @@ See [Adding the Extension](../../../README.md#adding-this-extension) on how to a
 ## [Tutorial](../../docs/tutorial.md)
 This extension sample also includes a step-by-step tutorial to accelerate your growth as you learn to build your own Omniverse Kit extensions. 
 
-Learn how to create a scene view within an omni.ui.Window element and how to apply gestures to items in the scene view. Additionally, the tutorial has a `Final Scripts` folder to use as a reference as you go along. 
+Learn how to create a scene view within an omni.ui.Window element and how to apply gestures to items in the scene view. 
 
 ​[Get started with the tutorial here.](../../docs/tutorial.md)
 
