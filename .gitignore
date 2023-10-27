@@ -1,0 +1,16 @@
+# all folders starting with _ are local
+_*/
+
+.DS_Store
+**/.vscode/ipch
+
+# byte-compiled python files
+*.py[cod]
+
+/.vs
+
+/app
+
+exts/omni.example.gesture_adv/*
+link_app.sh
+tools/packman/python.sh
