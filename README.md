@@ -53,12 +53,12 @@ Run:
 
 ```shell
 # Linux
-~$ link_app.sh
+~$ ./link_app.sh
 ```
 
 If successful you should see `app` folder link in the root of this repo.
 
-If multiple Omniverse apps is installed script will select recommended one. Or you can explicitly pass an app:
+If multiple Omniverse apps are installed the script will select the recommended one. Or you can explicitly pass an app:
 
 ```bash
 # Windows
@@ -67,10 +67,10 @@ If multiple Omniverse apps is installed script will select recommended one. Or y
 
 ```shell
 # Linux
-> link_app.sh --app code
+~$ ./link_app.sh --app code
 ```
 
-You can also just pass a path to create link to:
+You can also pass a path that leads to the Omniverse package folder to create the link:
 
 ```bash
 # Windows
@@ -79,7 +79,7 @@ You can also just pass a path to create link to:
 
 ```shell
 # Linux
-> link_app.sh --path "home/bob/.local/share/ov/pkg/create-2022.1.3"
+~$ ./link_app.sh --path "home/bob/.local/share/ov/pkg/create-2022.1.3"
 ```
 
 ## Contributing

@@ -361,6 +361,7 @@ def move(transform, shape):
 
 2. **Add** the following import at the top of the `window.py`:
 - `from functools import partial`
+- Partial functions allow for a more limited function with fewer parameters and fixed values.
 
 3. **Update** DragGesture's `on_changed_fn` to look like the following:
 
@@ -653,6 +654,7 @@ class GestureWindowExample(ui.Window):
                             ]
                         )
                     transform = sc.Transform(transform=sc.Matrix44.get_translation_matrix(0,0,-1))
+                    with transform:
                         sc.Rectangle(
                             2,
                             2,
@@ -765,6 +767,7 @@ class GestureWindowExample(ui.Window):
                             ]
                         )
                     transform = sc.Transform(transform=sc.Matrix44.get_translation_matrix(0,0,-1))
+                    with transform:
                         sc.Rectangle(
                             2,
                             2,
@@ -903,7 +906,7 @@ class LineManipulator(sc.Manipulator):
 
 ## Step 7.4: Add a Gesture Manager
 
-The Gesture Manager works the same way when added in `window.py`. However, this time we will specify which gesture to prevent.
+The Gesture Manager works the same way when added in `line.py`. However, this time we will specify which gesture to prevent.
 
 1. **Add** the following code after the imports:
 ```python
@@ -960,6 +963,9 @@ class LineManipulator(sc.Manipulator):
             )
 ```
 
-**Save** `line.py` and go back to Omniverse. Now we can freely drag the line in the viewport.
+**Save** `line.py` and go back to Omniverse. Now we can freely drag the line along the X-Axis in the viewport.
 
 ![](./images/step7-4.gif)
+
+
+Scene manipulators are essential tools in NVIDIA Omniverse for controlling, editing, and arranging 3D scenes. Explore [advanced scene manipulator](https://github.com/NVIDIA-Omniverse/kit-extension-sample-ui-scene) options to deepen your understanding of creating custom scene manipulation tools. 
