@@ -1,10 +1,10 @@
 # UI Gestures Extension Sample
 
-![previewImage](exts/data/gestures.gif)
+![previewImage](data/gestures.gif)
 
 ## [UI Gestures for omni.ui (omni.example.gesture_window)](exts/omni.example.gesture_window)
 
-![windowPreview](exts/data/gesturewindow_prev.gif)
+![windowPreview](data/gesturewindow_prev.gif)
 
 ### About
 This extension shows how to create gestures using omni.ui. The focus of this sample extension is to show how to register and create a scene view within a Window.
@@ -15,7 +15,7 @@ See the [README for this extension](exts/omni.example.gesture_window) to learn m
 
 ## [UI Gestures for Viewport (omni.example.gesture_viewport)](exts/omni.example.gesture_viewport)
 
-![viewportPreview](exts/data/gestureviewport_prev.gif)
+![viewportPreview](data/gestureviewport_prev.gif)
 
 ### About
 This extension shows how to create a simple manipulator with gestures using omni.ui.scene. The focus of this sample extension is to show how to create a simple manipulator and register gestures in the viewport.
@@ -24,7 +24,7 @@ This extension shows how to create a simple manipulator with gestures using omni
 ### [README](exts/omni.example.gesture_viewport)
 See the [README for this extension](exts/omni.example.gesture_viewport) to learn more about it including how to use it.
 
-## [Tutorial](exts/docs/tutorial.md)
+## [Tutorial](docs/tutorial.md)
 Follow a [step-by-step tutorial](exts/docs/tutorial.md) that walks you through how to use omni.ui.scene to build this extension.
 
 ## Adding This Extension

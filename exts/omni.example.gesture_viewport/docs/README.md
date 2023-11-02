@@ -1,6 +1,6 @@
 # Gestures Viewport (omni.example.gesture_viewport) 
 
-![](../../data/gestureviewport_prev.gif)
+![](../../../data/gestureviewport_prev.gif)
 ​
 ## Overview
 
@@ -8,12 +8,12 @@ This Extension displays the a simple manipulator in the Viewport. This manipulat
 
 See [Adding the Extension](../../../README.md#adding-this-extension) on how to add the extension to your project.
 ​
-## [Tutorial](../../docs/tutorial.md)
+## [Tutorial](../../../docs/tutorial.md)
 This extension sample also includes a step-by-step tutorial to accelerate your growth as you learn to build your own Omniverse Kit extensions. 
 
 Learn how to create a simple scene manipulator and how to apply gestures to the manipulator. 
 
-​[Get started with the tutorial here.](../../docs/tutorial.md)
+​[Get started with the tutorial here.](../../../docs/tutorial.md)
 
 ## Usage
 
