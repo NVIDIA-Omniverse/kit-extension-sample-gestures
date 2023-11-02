@@ -25,7 +25,7 @@ This extension shows how to create a simple manipulator with gestures using omni
 See the [README for this extension](exts/omni.example.gesture_viewport) to learn more about it including how to use it.
 
 ## [Tutorial](docs/tutorial.md)
-Follow a [step-by-step tutorial](exts/docs/tutorial.md) that walks you through how to use omni.ui.scene to build this extension.
+Follow a [step-by-step tutorial](docs/tutorial.md) that walks you through how to use omni.ui.scene to build this extension.
 
 ## Adding This Extension
 
