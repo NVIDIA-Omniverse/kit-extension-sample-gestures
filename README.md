@@ -29,57 +29,63 @@ Follow a [step-by-step tutorial](docs/tutorial.md) that walks you through how to
 
 ## Adding This Extension
 
-To add a this extension to your Omniverse app:
-1. Go into: Extension Manager -> Hamburger Icon -> Settings -> Extension Search Path
-2. Add this as a search path: `git://github.com/NVIDIA-Omniverse/kit-extension-sample-gestures.git?branch=main&dir=exts`
+To add this extension to your app:
 
-Alternatively:
 1. Download or Clone the extension, unzip the file if downloaded
-2. Copy the `exts` folder path within the extension folder
-    - i.e. home/.../kit-extension-sample-gestures/exts (Linux) or C:/.../kit-extension-sample-gestures/exts (Windows)
-3. Go into: Extension Manager -> Hamburger Icon -> Settings -> Extension Search Path
-4. Add the `exts` folder path as a search path
 
-## Linking with an Omniverse app
+2. Create a New Extension
 
-For a better developer experience, it is recommended to create a folder link named `app` to the *Omniverse Kit* app installed from *Omniverse Launcher*. A convenience script to use is included.
+> **NOTE:** This sample has TWO extensions. You will need to repeat the process for both.
 
-Run:
-
+**Linux:**
 ```bash
-# Windows
-> link_app.bat
+./repo.sh template new
 ```
 
-```shell
-# Linux
-~$ ./link_app.sh
+**Windows:**
+```powershell
+.\repo.bat template new
 ```
 
-If successful you should see `app` folder link in the root of this repo.
+3a. `gesture_viewport` Follow the prompt instructions:
+- **? Select with arrow keys what you want to create:** Extension
+- **? Select with arrow keys your desired template:**: Python UI Extension
+- **? Enter name of extension [name-spaced, lowercase, alphanumeric]:**: omni.example.gesture_viewport
+- **? Enter extension_display_name:**: Gesture Viewport
+- **? Enter version:**: 0.1.0
 
-If multiple Omniverse apps are installed the script will select the recommended one. Or you can explicitly pass an app:
+3b. `gesture_window` Follow the prompt instructions:
+- **? Select with arrow keys what you want to create:** Extension
+- **? Select with arrow keys your desired template:**: Python UI Extension
+- **? Enter name of extension [name-spaced, lowercase, alphanumeric]:**: omni.example.gesture_window
+- **? Enter extension_display_name:**: Gesture Window
+- **? Enter version:**: 0.1.0
 
+4. Add the Extension to an Application
+
+In the newly created extension, **copy and paste** the `omni.example.spawn_prims` folder that was cloned into `kit-app-template/sources/extensions/omni.example.gesture_viewport` and `kit-app-template/sources/extensions/omni.example.gesture_window`.
+
+You will be prompted if you want to replace files, **select** `Replace All`.
+
+To add your extension to an application, declare it in the dependencies section of the application's `.kit` file:
+
+```toml
+[dependencies]
+"omni.example.gesture_viewport" = {}
+"omni.example.gesture_window" = {}
+```
+
+5. Build with New Extensions
+After a new extension has been added to the `.kit` file, the application should be rebuilt to ensure extensions are populated to the build directory.
+
+**Linux:**
 ```bash
-# Windows
-> link_app.bat --app code
+./repo.sh build
 ```
 
-```shell
-# Linux
-~$ ./link_app.sh --app code
-```
-
-You can also pass a path that leads to the Omniverse package folder to create the link:
-
-```bash
-# Windows
-> link_app.bat --path "C:/Users/bob/AppData/Local/ov/pkg/create-2022.1.3"
-```
-
-```shell
-# Linux
-~$ ./link_app.sh --path "home/bob/.local/share/ov/pkg/create-2022.1.3"
+**Windows:**
+```powershell
+.\repo.bat build
 ```
 
 ## Contributing
