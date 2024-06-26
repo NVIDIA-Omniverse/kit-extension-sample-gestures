@@ -17,10 +17,7 @@ In this tutorial you learn how to:
 
 # Prerequisites
   We recommend that you complete these tutorials before moving forward:
-
-- [Extension Environment Tutorial](https://github.com/NVIDIA-Omniverse/ExtensionEnvironmentTutorial)
 - [How to make an extension by spawning prims](https://github.com/NVIDIA-Omniverse/kit-extension-sample-spawn-prims)
-
 
 # Step 1: Create an Extension
 
